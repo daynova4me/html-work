@@ -1,0 +1,6 @@
+p {font-size: 20px;}
+        #title {color: tomato;}
+        .luck {color: yellowgreen;}
+        * {margin: 5px;}
+        /* margin은 상하좌우, 문장 간격 설정. */
+        /* 적용은 시계방향으로 적용됨(위, 오른, 아래, 왼) */

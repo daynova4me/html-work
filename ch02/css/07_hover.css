@@ -1,0 +1,16 @@
+.like {
+        padding: 10px 20px;
+        font-size: 18px;
+        border: 2px solid hotpink;
+        background: white;
+        border-radius: 20px;
+    }
+    .like:hover  { background: pink; }            
+    /* 마우스를 올렸을 때 */
+    .like:active { transform: scale(0.9); }       
+    /* 누르고 있는 동안 살짝 작아짐 */
+    /* transform : 애니메이션 효과를 줌. */
+    input:focus  { outline: 3px solid hotpink; }  
+    /* 입력창을 클릭했을 때 */
+    /* focus : 마우스로 클릭해서 커서가 깜빡이면 */
+    /* blur : 마우스로 바깥을 클릭해서 해당 공간을 빠져나오는 것.(!= focus) */
