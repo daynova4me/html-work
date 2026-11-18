@@ -1,0 +1,25 @@
+h2,
+      h3 {
+        /* h2와 h3 전체(h2와 h3를 같이 스타일을 주겠다.) */
+        color: saddlebrown;
+      }
+      .menu li {
+        color: gray;
+        /* menu 밑에 있는 모든 li */
+      }
+      .menu > li {
+        font-weight: bold;
+        color: red;
+        /* menu 바로 밑에있는 li만 */
+      }
+      input {
+        padding: 8px;
+        font-size: 16px;
+      }
+      input [type="text"] {
+        /* 속성 지정할 때는 [] */
+        /* input 상자 중 타입이 text인 것만 가리킴 */
+        border: 2px solid tomato;
+        border-radius: 20px;
+        /* radius : 설정값이 커질수록 text의 입력란이 둥글어짐 */
+      }

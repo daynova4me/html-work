@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/01_aplly_css.css" />
+    <title>Document</title>
+    <!-- use style tag int head -->
+    <style>
+      .mystyle {
+        color: purple;
+      }
+      p {
+        color: blue;
+      }
+      /* 위에서 아래로 실행되기 때문에 같은 명령에 다른 값이 있으면 덮어쓰기됨. */
+      /* but 순서라는 게 존재함. style-mystlye-tag(p) 순으로 됨. */
+    </style>
+  </head>
+  <body>
+    <p style="color: red">
+      스타일 지정 방법 1. 태그 안에 직접 style 속성으로 적는법
+    </p>
+    <p class="mystyle">head 안에 style로 지정</p>
+    <p class="css-file">파일로 분리하는 법</p>
+  </body>
+</html>

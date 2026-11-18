@@ -1,0 +1,26 @@
+.btn {
+        font-size: 16px;
+        background: white;
+        padding: 10px 20px;
+        border: 2px solid #555;
+      }
+      /* css의 주석 모양 */
+      /* padding 안에 있는 글꼴의 사이즈를 기준으로 해서 해당 공간의 테두리(border) 사이의 간격을 설정 */
+      /* margin 버튼과 버튼 사이의 간격 설정 */
+      .btn.primary {
+        /* btn이면 primary */
+        background: royalblue;
+        color: white;
+        border-color: royalblue;
+        /* .btn.primary로 .btn과 .primary 사이의 공백이 있어서는 안 된다.
+        공백이 생기면 .primary또한 class="primary"로 인식을 하게 되어 원하는 결과가 안 나온다. */
+      }
+      a.btn {
+        color: #555;
+        text-decoration: none;
+        /* 특정 값을 부를 때는 태그.이름으로 구성한다. */
+        /* none : 없애다. */
+        border: none;
+        background: transparent;
+        /* transparent : 투명하게 */
+      }
