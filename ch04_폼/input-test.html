@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/input-test.css">
+</head>
+<body>
+    <!-- action : 전송버튼을 눌렀을 때 데이터를 보낼 위치 -->
+     <!-- method : get(디폴트) / post(숨겨서보냄)
+      get: url에 전송하는 방식을 모두 표시하는 것.
+      post: url에해당 내용을 보여주지 않으면서 서버로 전송할 때 사용(회원가입, 로그인 등) 
+      url을 보이게 할 건지 안 보이게 할 건지를 여기 from method에서 결정함.
+      생략하면 기본적으로 get으로 설정됨.-->
+    <!-- <form action="" method="get"> -->
+        <!-- 레이블과 짝을 이루도록 하는 것은 id이다. -->
+         <!-- 서버의 내용을 전송하는 것은 name 이다. -->
+        <!-- <label for="userId">아이디</label> -->
+        <!-- 아이디 입력란에 적은 내용을 userId라는 이름으로 해서 표시할 거야.
+         입력 : parasite / 출력 : userId=parasite -->
+         <!-- id / class : css 또는 javasctript에서 사용 -->
+        <!-- <input type="text" id="userId" name="userId" -->
+        <!-- class="text-input" placeholder="영문4-12자" -->
+        <!-- minlength="4" maxlength="12" required autofocus/> -->
+        <!-- 최소 4자, 최대 12자로 설정하도록. -->
+         <!-- required : 필수입력 -->
+          <!-- autofocus : focus 했을 때 깜빡이는 것. -->
+           <!-- <label for="email">이메일</label> -->
+           <!-- <input type="email" id="email" name="email" class="text-input" -->
+           <!-- placeholder="example@mail.com" required> -->
+        <!-- <button type="submit">제출</button> -->
+        <!-- <button type="reset">다시</button> -->
+    <!-- </form> -->
+     <!-- method="get" : 제출하면 주소창에 name=값 이 보여서 확인하기 좋음 -->
+<form action="" method="get">
+
+    <!-- 글자 수 제한 + 필수 + 자동 포커스 -->
+    <label for="userId">아이디</label>
+    <input type="text" id="userId" name="userId" class="text-input"
+           placeholder="영문 4~12자" minlength="4" maxlength="12"
+           required autofocus>
+
+    <!-- 이메일 형식 자동 검사 -->
+    <label for="email">이메일</label>
+    <input type="email" id="email" name="email" class="text-input"
+           placeholder="example@mail.com" required>
+
+    <!-- pattern : 정규식 형식 검사 -->
+    <label for="phone">휴대폰</label>
+    <input type="tel" id="phone" name="phone" class="text-input"
+           placeholder="010-1234-5678"
+           pattern="010-[0-9]{4}-[0-9]{4}" required>
+
+    <!-- number : min / max -->
+    <label for="age">나이</label>
+    <input type="number" id="age" name="age" class="text-input" min="1" max="120">
+
+    <!-- number : min / max / step -->
+    <label for="qty">수량 (2개 단위)</label>
+    <input type="number" id="qty" name="qty" class="text-input"
+           min="0" max="10" step="2" value="2">
+
+    <!-- range : 슬라이더 -->
+    <label for="volume">볼륨</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" step="10" value="50">
+
+    <!-- date : 날짜 범위 -->
+    <label for="reserve">예약일</label>
+    <input type="date" id="reserve" name="reserve" class="text-input"
+           min="2026-12-01" max="2026-12-31">
+
+    <!-- radio : name이 같아야 한 그룹 -->
+    <p>성별</p>
+    <input type="radio" id="m" name="gender" value="M" checked>
+    <label for="m">남</label>
+    <input type="radio" id="f" name="gender" value="F">
+    <label for="f">여</label>
+
+    <!-- readonly : 수정 불가, 값 전송됨 -->
+    <label for="code">가입 코드</label>
+    <input type="text" id="code" name="code" class="text-input"
+           value="A1234" readonly>
+
+    <!-- disabled : 비활성화, 값 전송 안 됨 -->
+    <label for="coupon">쿠폰 코드</label>
+    <input type="text" id="coupon" name="coupon" class="text-input"
+           value="EVENT2026" disabled>
+
+    <!-- textarea : 여러 줄 입력 -->
+    <label for="memo">자기소개</label>
+    <textarea id="memo" name="memo" class="text-input" rows="5"
+              placeholder="200자 이내" maxlength="200"></textarea>
+
+    <button type="submit">가입</button>
+</form>
+</body>
+</html>
