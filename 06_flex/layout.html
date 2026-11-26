@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* 화면의 전체 높이(vh) */
+            height: 100vh;
+        }
+        .header {
+            height: 80px;
+            background-color: steelblue;
+        }
+        .display {
+            display: flex;
+            /* 위, 아래 제외하고 나머지 다 갖음 */
+            flex: 1;
+        }
+        .nav {
+            /* grow, shrimp, base-with
+            늘지말고, 줄지도 말고, 항상 150px */
+            flex: 0 0 150px;
+            background-color: lightsteelblue;
+        }
+        .main {
+            flex: 1;
+            background-color: whitesmoke;
+        }
+        .ad {
+            flex: 0 0 150px;
+            background-color: lightsteelblue;
+        }
+        .footer {
+            height: 60px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="display">
+            <div class="nav"></div>
+            <div class="main"
+            style="column-count: 3;
+            column-width: 200px;
+            column-gap: 20px;
+            column-rule: 1px solid red;">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae blanditiis amet inventore optio necessitatibus sunt eligendi architecto minus, delectus, quas labore quam modi. Pariatur ex autem sit nesciunt veniam?
+                    Consectetur labore provident laboriosam iure nisi, ex quasi fugiat, necessitatibus veniam itaque autem? Voluptates numquam laboriosam expedita, rem odio, nihil laudantium quasi modi incidunt ad iste dignissimos. Consequuntur, molestiae sint?
+                    Voluptas natus beatae voluptatibus reprehenderit aperiam. Dolores ratione ipsam impedit, veritatis commodi, non perspiciatis id illo autem nemo expedita, vero quos voluptates hic sed facere eaque libero dicta obcaecati repellendus.
+                    Animi facilis vitae nobis asperiores sit est consequatur itaque. Modi omnis, ut facere blanditiis harum fugit esse reiciendis, explicabo magni deserunt assumenda reprehenderit illo rem voluptatum praesentium et commodi nobis.
+                    Itaque, vel minus. Tempora, ut earum! Labore, quaerat modi quasi perferendis amet, mollitia ducimus quis iusto fuga sit facilis corporis adipisci commodi odio voluptates. Fugiat provident voluptatibus modi reiciendis vero!
+                    Ipsa incidunt suscipit minima laudantium eum nisi non quibusdam sit placeat nostrum perspiciatis aut, ab possimus officia doloremque ipsum! Voluptas consequuntur numquam unde temporibus dolorum ex totam, eveniet praesentium harum.
+                    Quaerat suscipit, recusandae quam laboriosam tempore, harum totam voluptatibus odio unde voluptate dicta explicabo alias aliquid porro pariatur vitae eaque debitis modi accusamus nihil exercitationem a temporibus delectus. Maiores, quis.
+                    Et incidunt repellendus praesentium explicabo, enim deserunt cum aliquid? Fugit facere officia nisi numquam, perferendis minima, temporibus, quibusdam nobis cupiditate delectus accusantium voluptatem repellendus facilis labore eum suscipit aliquid itaque.
+                    Sunt quaerat doloribus amet incidunt nihil eos, rerum ex minus a, sapiente maxime non temporibus itaque consectetur exercitationem fuga, dolorum ipsam voluptatem in assumenda repellendus odit voluptas reiciendis sint! Nesciunt.
+                    Reiciendis porro architecto dignissimos modi debitis omnis consequatur laudantium doloribus voluptate perferendis aliquam, optio eaque id animi nisi assumenda similique placeat. A modi non tempora repellat nam facere nemo ad!
+                    Itaque in soluta reprehenderit doloribus eligendi ab saepe suscipit delectus ipsa dolorum omnis doloremque asperiores earum nesciunt, sint possimus, enim alias perferendis sed harum, neque deserunt magnam ratione eaque. Repellat.
+                    Tempore consequuntur asperiores suscipit voluptatem. Laudantium aut expedita laborum cupiditate nemo tempora facere sequi in, aliquid rem, maiores corporis, veniam quidem exercitationem odit voluptas. Commodi nisi aliquam repudiandae quis fugit!
+                    Vero optio, perspiciatis quae sequi culpa neque corporis atque dolores commodi consectetur sint voluptatum esse maiores incidunt expedita amet eos omnis eveniet alias distinctio. Cupiditate adipisci cumque doloremque minima quaerat.
+                    Ducimus saepe fugit deserunt eos recusandae molestiae, ipsa ullam exercitationem earum? Autem vero enim perspiciatis nihil adipisci tenetur totam ipsam, pariatur earum, iure eius tempore explicabo fugit soluta! Eligendi, soluta?
+                    Aliquam, pariatur, iste tenetur optio nisi animi similique deserunt natus necessitatibus expedita placeat accusantium minima, illum delectus. Atque numquam reprehenderit doloribus, sint, magnam quos deserunt, quidem nemo modi cumque quo!
+                    Inventore magni porro fugit quis obcaecati molestias nemo, quae non dignissimos velit eaque totam rem asperiores accusamus optio reprehenderit culpa amet? Neque amet perferendis ducimus id quis voluptatum ab repudiandae.
+                    Reiciendis voluptatibus voluptatem voluptas quod eum obcaecati modi dicta voluptate perferendis quisquam necessitatibus unde ea officia, magni architecto nostrum illo numquam ducimus animi consequatur similique? Magnam consequatur molestias hic libero.
+                    Dolorum, fuga tempore! Placeat quos repudiandae dignissimos odio impedit? Repellendus ad iste neque qui culpa officia sapiente odit, maxime reiciendis, modi architecto nesciunt unde recusandae quasi ratione quos est consequatur.
+                    Quos, libero. Soluta sed similique iste voluptatibus maiores veritatis reprehenderit omnis dicta aperiam! Vero laboriosam voluptatem reprehenderit dolorem dolor quo consequatur tempora iste temporibus aut a perferendis doloremque, repellat totam?
+                    Maiores, accusantium perspiciatis amet consequatur tempore, minus optio ut molestias voluptates doloribus ipsum consectetur fugiat explicabo dignissimos repudiandae accusamus? Dolorem excepturi labore id ad harum ipsam iste eveniet commodi porro.
+                </p>
+            </div>
+            <div class="ad">  </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
