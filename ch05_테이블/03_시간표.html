@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table { border-collapse: collapse;
+        text-align: center;
+        /* width: 600px; */
+        padding: 1px solid gray;
+    }
+    caption { font-size: 16px;
+    font-weight: bold;}
+    th,td { padding: 12px 30px; }
+    th {
+        font-weight: bold;
+        background-color: steelblue;
+    }
+    .time {
+        background-color: lightgray;
+        font-weight: bold;
+    }
+    .html { background-color: mistyrose; }
+
+    .css { background-color: lightcyan; }
+
+    .java { background-color: moccasin; }
+
+    .javascript { background-color: lemonchiffon; }
+
+    .spring { background-color: palegreen; }
+
+    .db { background-color: plum; }
+
+    .project { background-color: lightsalmon; }
+
+    .free { background-color: gainsboro; }
+
+    .lunch { background-color: wheat; }
+
+    .friday {
+        color: gray;
+        text-align: right;
+        padding-right: 10px;
+    }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>주간 시간표</caption>
+        <thead>
+            <tr>
+                <th>시간</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time">1교시</td>
+                <td rowspan="2" class="html">HTML</td>
+                <td class="css">CSS</td>
+                <td rowspan="2" class="java">Java</td>
+                <td class="css">CSS</td>
+                <td rowspan="3" class="project">프로젝트</td>
+            </tr>
+            <tr>
+                <td class="time">2교시</td>
+                <td class="css">CSS</td>
+                <td class="javascript">JavaScript</td>
+            </tr>
+            <tr>
+                <td class="time">3교시</td>
+                <td class="html">HTML</td>
+                <td class="java">Java</td>
+                <td class="java">Java</td>
+                <td class="javascript">JavaScript</td>
+            </tr>
+            <tr>
+                <td class="time">점심</td>
+                <td colspan="5" class="lunch">점심 시간</td>
+            </tr>
+            <tr>
+                <td class="time">4교시</td>
+                <td colspan="2" class="spring">Spring Boot</td>
+                <td class="db">DB</td>
+                <td colspan="2" class="free">자습</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="friday">※ 금요일은 프로젝트 진행</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
